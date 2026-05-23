@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.material.icons.extended)
 
     // Hilt
     implementation(libs.com.google.dagger.hilt)
@@ -68,7 +69,11 @@ dependencies {
     // Lifecycle
     implementation(libs.androidx.lifecycle.runtime.compose)
 
+    //work manager
     implementation(libs.androidx.work.manager)
+
+    //fonts
+    implementation(libs.androidx.compose.ui.text.google.fonts)
 
 
 

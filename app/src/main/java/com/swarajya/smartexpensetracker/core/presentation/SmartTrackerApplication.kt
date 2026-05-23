@@ -1,4 +1,4 @@
-package com.swarajya.smartexpensetracker.base.presentation
+package com.swarajya.smartexpensetracker.core.presentation
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
