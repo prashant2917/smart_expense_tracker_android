@@ -9,20 +9,31 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import kotlinx.serialization.Serializable
 
 // Define type-safe destinations
-@Serializable object Home
-@Serializable object Scanner
-@Serializable object Analytics
-@Serializable object Settings
+@Serializable
+object Home
+@Serializable
+object Scanner
+@Serializable
+object Analytics
+@Serializable
+object Settings
 
-data class TopLevelRoute<T : Any>(
+data class BottomBarRoute<T : Any>(
     val name: String,
     val route: T,
     val icon: ImageVector
 )
 
-val TOP_LEVEL_ROUTES = listOf(
-    TopLevelRoute("Home", Home, Icons.Filled.Home),
-    TopLevelRoute("Scanner", Scanner, Icons.Filled.QrCodeScanner),
-    TopLevelRoute("Analytics", Analytics, Icons.Filled.Analytics),
-    TopLevelRoute("Settings", Settings, Icons.Filled.Settings)
+val BOTTOM_BAR_ROUTES = listOf(
+    BottomBarRoute(BottomBarRouteNames.HOME, Home, Icons.Filled.Home),
+    BottomBarRoute(BottomBarRouteNames.SCANNER, Scanner, Icons.Filled.QrCodeScanner),
+    BottomBarRoute(BottomBarRouteNames.ANALYTICS, Analytics, Icons.Filled.Analytics),
+    BottomBarRoute(BottomBarRouteNames.SETTINGS, Settings, Icons.Filled.Settings)
 )
+
+object BottomBarRouteNames {
+    const val HOME = "Home"
+    const val SCANNER = "Scanner"
+    const val ANALYTICS = "Analytics"
+    const val SETTINGS = "Settings"
+}

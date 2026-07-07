@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Smart Expense Tracker</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="scanner">Scanner</string>
+    <string name="analytics">Analytics</string>
+    <string name="settings">Settings</string>
+
+    <!--exit dialog-->
+    <string name="exit_dialog_title">Exit app</string>
+    <string name="exit_dialog_message">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--home screen-->
+    <string name="scan_bills_message">Click on scan button to add bills</string>
+
+
 </resources>
